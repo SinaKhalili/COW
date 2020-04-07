@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <cstring>
 
 #define COMPILER	"g++"
 #define FLAGS		"-O3 -x c++"
@@ -303,12 +304,15 @@ int main( int argc, char** argv )
     
     output = fopen( "cow.out.cpp", "wb" );
     fprintf( output, "#include <stdio.h>\n" );
+    fprintf( output, "#include <stdlib.h>\n" );
     fprintf( output, "#include <vector>\n" );
+    fprintf( output, "#include <cstring>\n" );
     fprintf( output, "typedef std::vector<int> t_;t_ m;t_::iterator p;\n" );
     fprintf( output, "bool h;int r;\n" );
     fprintf( output, "void rterr(){puts(\"Runtime error.\\n\");}\n" );
     fprintf( output, "int main(int a,char** v){\n" );
     fprintf( output, "m.push_back(0);p=m.begin();h=false;\n" );
+    fprintf( output, "if(a > 1){int i = 0; char temp = v[1][i]; while(temp != 0){m.push_back(temp); i++; temp = v[1][i];} m.push_back(0); p=m.end();}\n");
 
     prog_pos = program.begin();
     while( prog_pos != program.end() )
