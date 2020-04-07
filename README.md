@@ -1,6 +1,6 @@
-🐮 Sina's Fork of the cow programming language 🐮
+🐮 Fork of the cow programming language 🐮
 
-Check out the [video](https://youtube.com/TODOFIXTHISLINK) I made on cow!
+Check out the [video](https://youtu.be/px2aSX02pqE) I made on cow!
 
 # Additions
 It adds command line argument support! (But only a single argument)
