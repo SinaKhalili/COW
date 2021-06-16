@@ -15,7 +15,7 @@ This allows the user to supply a single string as an argument to a cow program.
 The only motivation for this was to write the classic [cowsay program in cow itself](https://github.com/SinaKhalili/cowsay-but-in-cow).
 
 
-COW is a toy esoteric language. See the [classic COW webpage](http://bigzaphod.github.com/COW/) for more info!
+COW is a toy esoteric language. See the [classic COW webpage](http://bigzaphod.github.io/COW/) for more info!
 
 ## Usage
 
