@@ -212,9 +212,9 @@ bool compile( int instruction, bool advance )
     
     // oom
     case 11:
-        fprintf( output, "char b[100];int c=0;" );
+        fprintf( output, "{char b[100];int c=0;" );
         fprintf( output, "while(c<sizeof(b)-1){b[c]=getchar();c++;b[c]=0;if(b[c-1]=='\\n')break;}" );
-        fprintf( output, "if(c==sizeof(b))while(getchar()!='\\n');(*p)=atoi(b);" );
+        fprintf( output, "if(c==sizeof(b))while(getchar()!='\\n');(*p)=atoi(b);}" );
         PRETTY( "oom" );
         break;
 
